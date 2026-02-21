@@ -58,14 +58,14 @@ export default function NoteModal({ selectedNoteId, onClose, onNavigate }: NoteM
           {/* Card */}
           <motion.div
             key={note.id}
-            className="relative z-10 w-full max-w-lg bg-[#faf6e9] rounded-2xl shadow-2xl overflow-hidden"
+            className="relative z-10 w-full max-w-lg bg-[#f5e9fa] rounded-2xl shadow-2xl overflow-hidden"
             initial={{ scale: 0.85, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.85, opacity: 0, y: 20 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
             {/* Photo */}
-            <div className="w-full aspect-[4/3] bg-[hsl(42,30%,85%)] overflow-hidden">
+            <div className="w-full aspect-[4/3] bg-[hsl(282,30%,85%)] overflow-hidden">
               <img
                 src={note.photo}
                 alt={`Photo from ${note.from}`}
@@ -78,7 +78,7 @@ export default function NoteModal({ selectedNoteId, onClose, onNavigate }: NoteM
 
             {/* Text content */}
             <div className="p-6 sm:p-8">
-              <p className="font-serif italic text-gold-dark text-base sm:text-lg leading-relaxed">
+              <p className="font-serif italic text-purple-600 text-base sm:text-lg leading-relaxed">
                 &ldquo;{note.fullText}&rdquo;
               </p>
               <p className="mt-4 font-serif font-bold text-sm" style={{ color: note.color }}>

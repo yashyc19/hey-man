@@ -21,7 +21,7 @@ export default function CircleTransition({ isActive, origin }: CircleTransitionP
     <AnimatePresence>
       {isActive && (
         <motion.div
-          className="fixed inset-0 z-50 psychedelic-bg"
+          className="fixed inset-0 z-50 bg-linear-to-br from-[#EDE7FF] to-[#DCCFFF]"
           initial={{
             clipPath: `circle(0px at ${origin.x}px ${origin.y}px)`,
           }}

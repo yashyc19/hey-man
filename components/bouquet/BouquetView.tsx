@@ -57,10 +57,10 @@ export default function BouquetView() {
           className="absolute inset-0 flex flex-col items-center justify-center z-30 pointer-events-none"
           style={{ opacity: fridayOpacity }}
         >
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-gold-dark select-none mb-4">
-            Happy Friday
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-purple-700 select-none mb-4">
+            HEY MAN O_o?
           </h1>
-          <p className="font-serif italic text-gold-dark/60 text-lg sm:text-xl mb-3 select-none">
+          <p className="font-serif italic text-purple-600/60 text-lg sm:text-xl mb-3 select-none">
             scroll down
           </p>
           <motion.svg
@@ -68,7 +68,7 @@ export default function BouquetView() {
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            className="text-gold-dark/40"
+            className="text-purple-600/40"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           >
@@ -78,10 +78,13 @@ export default function BouquetView() {
 
         {/* "Happy Birthday" — cross-fades in, slides up to top */}
         <motion.h1
-          className="absolute left-0 right-0 text-center font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-gold-dark select-none z-30 pointer-events-none"
+          className="absolute left-0 right-0 text-center font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-purple-700 select-none z-30 pointer-events-none"
           style={{ opacity: birthdayOpacity, top: birthdayTop }}
         >
-          Happy Birthday
+           We gon missya <br />
+           BBGGGG !!! <br />
+           keep being a <br />
+           TEENAGE DIRTBAG
         </motion.h1>
 
         {/* Flower + Notes container — centered */}

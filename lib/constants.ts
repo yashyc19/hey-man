@@ -11,6 +11,8 @@ export interface Note {
 }
 
 export const NOTES: Note[] = [
-  { id: 1, from: "Your mom from New Jersey", text: "You deserve beautiful things", fullText: "My beautiful girl, wishing you all the best in the world, you deserve only beautiful things. I love you so much my Maitreyi.", photo: "/photos/sara.jpeg", color: "hsl(42,78%,60%)" },
-  { id: 2, from: "The mimling to my raghabum ♥️", text: "Growing old together", fullText: "The butterfly effect is crazy because had Sahi not introduced us in 7th grade, and had we not rolled our eyes at the same time to squadling drama, would we even be here today? You're my best, most favorite human being in the whole world, and it's so beautiful that we're actually growing old together!", photo: "/photos/varsha.jpeg", color: "hsl(38,80%,55%)" },
+  { id: 1, from: "ur Frat House Roomie", text: "", fullText: "", photo: "/photos/shree.jpeg", color: "hsl(270,30%,40%)" },
+  { id: 2, from: "ur SLAYEST HOMEBOY", text: "To the RANDOM ASS BRAINROT", fullText: "", photo: "/photos/sussy.jpeg", color: "hsl(270,30%,40%)" },
+  { id: 3, from: "Vidi", text: "", fullText: "", photo: "/photos/vidi.jpeg", color: "hsl(270,30%,40%)" },
+  { id: 4, from: "Maanya", text: "", fullText: "", photo: "/photos/maanya.jpeg", color: "hsl(270,30%,40%)" },
 ];

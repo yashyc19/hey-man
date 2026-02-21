@@ -21,7 +21,7 @@ export default function NoteCard({ note, onClick, index, scrollProgress }: NoteC
       <motion.button
         onClick={onClick}
         className="w-20 h-24 sm:w-24 sm:h-28 md:w-28 md:h-32 rounded-lg shadow-md cursor-pointer
-          border border-[hsl(42,40%,80%)] bg-[#faf6e9] hover:shadow-lg
+          border border-[hsl(270,31%,69%)] bg-[#e9e5fa] hover:shadow-lg
           flex flex-col items-center justify-between p-2 sm:p-2.5 text-left
           transition-shadow"
         style={{
@@ -32,7 +32,7 @@ export default function NoteCard({ note, onClick, index, scrollProgress }: NoteC
       >
       {/* Tiny photo thumbnail */}
       <div
-        className="w-full h-8 sm:h-10 md:h-12 rounded overflow-hidden bg-[hsl(42,30%,85%)] shrink-0"
+        className="w-full h-8 sm:h-10 md:h-12 rounded overflow-hidden bg-[hsl(273,25%,81%)] shrink-0"
       >
         <img
           src={note.photo}
@@ -46,7 +46,7 @@ export default function NoteCard({ note, onClick, index, scrollProgress }: NoteC
       </div>
 
       {/* Note text */}
-      <p className="text-[9px] sm:text-xs md:text-sm leading-snug text-gold-dark font-serif line-clamp-2 mt-1 w-full">
+      <p className="text-[9px] sm:text-xs md:text-sm leading-snug text-purple-600 font-serif line-clamp-2 mt-1 w-full">
         {note.text}
       </p>
 
