@@ -65,7 +65,7 @@ export default function NoteModal({ selectedNoteId, onClose, onNavigate }: NoteM
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
             {/* Photo */}
-            <div className="w-full aspect-[4/3] bg-[hsl(282,30%,85%)] overflow-hidden">
+            <div className="w-full aspect-4/3 bg-[hsl(282,30%,85%)] overflow-hidden">
               <img
                 src={note.photo}
                 alt={`Photo from ${note.from}`}
