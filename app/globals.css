@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --color-cream: #FDFCF0;
+  --color-gold: #D4A843;
+  --color-gold-light: #E8C767;
+  --color-gold-dark: #B08930;
+
+  /* Psychedelic palette */
+  --color-psyche-pink: #ff71ce;
+  --color-psyche-blue: #01cdfe;
+  --color-psyche-green: #05ffa1;
+  --color-psyche-purple: #b967ff;
+  --color-psyche-yellow: #fffb96;
+
+  /* Lego colors */
+  --color-lego-red: #D01012;
+  --color-lego-green: #4B9F4A;
+  --color-lego-blue: #1E5AA8;
+  --color-lego-yellow: #F5CD2F;
+
+  --animate-spin-vinyl: spin-vinyl 3s linear infinite;
+  --animate-breathe: breathe 4s ease-in-out infinite;
+  --animate-pulse-gold: pulse-gold 1s ease-out;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-psychedelic-shift: psychedelic-shift 8s ease-in-out infinite;
+
+  @keyframes spin-vinyl {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-6px) scale(1.01); }
+  }
+
+  @keyframes pulse-gold {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @keyframes psychedelic-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+}
+
+@layer utilities {
+  .grain-overlay {
+    position: relative;
+  }
+
+  .grain-overlay::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .psychedelic-bg {
+    background: linear-gradient(
+      45deg,
+      var(--color-psyche-pink),
+      var(--color-psyche-purple),
+      var(--color-psyche-blue),
+      var(--color-psyche-green),
+      var(--color-psyche-yellow),
+      var(--color-psyche-pink)
+    );
+    background-size: 400% 400%;
+    animation: psychedelic-shift 8s ease-in-out infinite;
+  }
+}
