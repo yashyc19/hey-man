@@ -49,7 +49,7 @@ export default function BouquetView() {
   const birthdayTop = useTransform(scrollYProgress, [0.05, 0.3, 1], ["40%", "5%", "5%"]);
 
   return (
-    <div ref={containerRef} className="h-[300vh] bg-cream grain-overlay">
+    <div ref={containerRef} className="h-[300vh] bg-purple-200 grain-overlay">
       <div className="sticky top-0 h-screen">
 
         {/* "Happy Friday" + scroll prompt — visible at start, fades out on scroll */}
@@ -58,7 +58,7 @@ export default function BouquetView() {
           style={{ opacity: fridayOpacity }}
         >
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-purple-700 select-none mb-4">
-            HEY MAN O_o?
+            MUMBAI DIARIES
           </h1>
           <p className="font-serif italic text-purple-600/60 text-lg sm:text-xl mb-3 select-none">
             scroll down
@@ -81,10 +81,8 @@ export default function BouquetView() {
           className="absolute left-0 right-0 text-center font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-purple-700 select-none z-30 pointer-events-none"
           style={{ opacity: birthdayOpacity, top: birthdayTop }}
         >
-           We gon missya <br />
-           BBGGGG !!! <br />
-           keep being a <br />
-           TEENAGE DIRTBAG
+           Mumbai is going to < br/>
+           <b>MISS YOUUUU !!!</b>
         </motion.h1>
 
         {/* Flower + Notes container — centered */}

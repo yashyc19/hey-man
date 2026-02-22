@@ -32,7 +32,7 @@ export default function NoteCard({ note, onClick, index, scrollProgress }: NoteC
       >
       {/* Tiny photo thumbnail */}
       <div
-        className="w-full h-8 sm:h-10 md:h-12 rounded overflow-hidden bg-[hsl(273,25%,81%)] shrink-0"
+        className="w-full h-8 sm:h-10 md:h-12 rounded overflow-hidden bg-[hsl(275,36%,79%)] shrink-0"
       >
         <img
           src={note.photo}
