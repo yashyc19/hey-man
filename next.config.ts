@@ -1,8 +1,10 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
 
-const nextConfig: NextConfig = {
-  serverExternalPackages: ["google-photos-album-image-url-fetch"],
+const nextConfig = {
   output: "export",
+  images: {
+    unoptimized: true, // IMPORTANT for static export
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
