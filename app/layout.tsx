@@ -3,8 +3,8 @@ import { playfairDisplay, inter } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HBD",
-  description: "A bouquet of lilies, and something hidden beneath",
+  title: "Mumbai Diaries",
+  description: "A bouquet of memories, and a special message from each one of your loved ones.",
 };
 
 export default function RootLayout({
